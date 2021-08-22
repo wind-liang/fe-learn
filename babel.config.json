@@ -1,6 +1,7 @@
 // babel.config.json
 {
     "presets": [
+        "@babel/preset-typescript",
         [
             "@babel/preset-env",
             {
