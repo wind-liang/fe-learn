@@ -1,16 +1,15 @@
 // babel.config.json
 {
-    "presets": [
-        "@babel/preset-typescript",
-        [
-            "@babel/preset-env",
-            {
-                "useBuiltIns": "usage",
-                "corejs": 3
-            }
-        ],
-        "@babel/preset-react"
+  "presets": [
+    "@babel/preset-typescript",
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "usage",
+        "corejs": 3
+      }
     ],
-    "plugins": [
-    ]
+    "@babel/preset-react"
+  ],
+  "plugins": []
 }

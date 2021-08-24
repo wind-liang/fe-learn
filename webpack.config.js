@@ -1,9 +1,9 @@
-const path = require('path')
+const path = require('path');
 module.exports = {
   entry: './src/main.tsx',
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     rules: [
@@ -16,7 +16,7 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
@@ -25,6 +25,6 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.jsx', '.js'],
   },
   devServer: {
-    static: path.resolve(__dirname, './dist')
-  }
-}
+    static: path.resolve(__dirname, './dist'),
+  },
+};
